@@ -7,12 +7,10 @@ jobs:
       vmImage: 'macOS-10.13'
     steps:
     - task: FlutterInstall@0
-
-    - script: echo Hello, world!
     - task: FlutterBuild@0
       inputs:
         target: apk
-        projectDirectory: $(projectDirectory)
+        projectDirectory: ./
     - task: CopyFiles@2
       inputs:
         contents: '**/*.apk'
