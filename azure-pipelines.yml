@@ -1,5 +1,14 @@
 # Starter pipeline
+- task: FlutterInstall@0
+  inputs:
+    channel: 'stable'
+    version: 'latest'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
+- task: FlutterBuild@0
+  inputs:
+    target: 'apk'
+    projectDirectory: '$(projectDirectory)'
+    apkTargetPlatform: 'android-arm64'
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
