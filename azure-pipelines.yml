@@ -8,7 +8,7 @@ jobs:
     - task: FlutterInstall@0
     - task: InstallAppleCertificate@2
       inputs:
-        certSecureFile: 'ios_development_luxoft'
+        certSecureFile: 'ios_development_luxoft.cer'
         keychain: 'temp'
     - task: FlutterBuild@0
       inputs:
