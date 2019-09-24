@@ -15,12 +15,7 @@ jobs:
         certPwd: '12345'
         keychain: 'temp'
     - task: FlutterInstall@0
-    
     - task: FlutterBuild@0
       inputs:
         target: all
         projectDirectory: ./
-    - task: CopyFiles@2
-      inputs:
-        contents: '**/*.apk'
-        targetFolder: '$(build.artifactStagingDirectory)'
