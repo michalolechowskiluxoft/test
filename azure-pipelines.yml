@@ -6,6 +6,10 @@ jobs:
       vmImage: 'macOS-10.13'
     steps:
     - task: FlutterInstall@0
+    - task: InstallAppleProvisioningProfile@1
+      inputs:
+        provisioningProfileLocation: 'secureFiles'
+        provProfileSecureFile: 'mo_profile.developerprofile'
     - task: InstallAppleCertificate@2
       inputs:
         certSecureFile: 'cert_luxoft.p12'
