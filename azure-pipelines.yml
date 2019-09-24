@@ -9,7 +9,7 @@ jobs:
     - task: InstallAppleProvisioningProfile@1
       inputs:
         provisioningProfileLocation: 'secureFiles'
-        provProfileSecureFile: '8117b735-8a72-48f0-b4cd-5485db66beba.mobileprovision'
+        provProfileSecureFile: 'a5f1790c-ddb5-4105-ac1f-5bfca611295d.mobileprovision'
     - task: InstallAppleCertificate@2
       inputs:
         certSecureFile: 'cert_luxoft.p12'
