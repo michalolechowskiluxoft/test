@@ -1,7 +1,7 @@
 variables:
   projectDirectory: testapp
 jobs:
-  - job: Android
+  - job: Flutter
     pool:
       vmImage: 'macOS-10.13'
     steps:
