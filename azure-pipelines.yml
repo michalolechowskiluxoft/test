@@ -1,5 +1,5 @@
 variables:
-  projectDirectory: testapp
+  projectDirectory: junior
 jobs:
   - job: Flutter
     pool:
