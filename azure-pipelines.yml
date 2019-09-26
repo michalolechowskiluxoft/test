@@ -3,7 +3,7 @@ variables:
 jobs:
   - job: Android
     pool:
-      vmImage: 'macOS-10.13'
+      name: 'default' 
     steps:
     - task: FlutterInstall@0
     - task: InstallAppleCertificate@2
