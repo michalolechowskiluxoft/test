@@ -3,7 +3,7 @@ variables:
 jobs:
   - job: Flutter
     pool:
-      vmImage: 'macOS-10.13'
+      name: 'default' 
     steps:
     - task: InstallAppleProvisioningProfile@1
       inputs:
