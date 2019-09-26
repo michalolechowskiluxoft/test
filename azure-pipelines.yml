@@ -14,7 +14,7 @@ jobs:
         certSecureFile: 'cert_iphone_luxoft.p12'
         certPwd: $(P12AppleCertPassword)
         keychain: 'temp'
-    - task: FlutterInstall@0
+    # - task: FlutterInstall@0
     - task: FlutterBuild@0
       inputs:
         target: all
